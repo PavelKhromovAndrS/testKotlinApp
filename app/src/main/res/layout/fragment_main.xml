@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainFragment">
+
+    <LinearLayout
+        android:id="@+id/movies_root"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/first_kotlin_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/first_kotlin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_margin"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/first_button_on_kotlin"
+        app:cornerRadius="@dimen/button_c_radius"
+        app:layout_constraintBottom_toTopOf="@id/navigation_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movies_root" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/navigation_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/button_margin"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/navigation_button"
+        app:cornerRadius="@dimen/button_c_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_kotlin_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
