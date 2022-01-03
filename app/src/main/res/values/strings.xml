@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">testKotlinApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_button_on_kotlin">First button on Kotlin</string>
+    <string name="navigation_fragment">Navigation fragment</string>
+    <string name="navigation_button">navigation_button</string>
+    <string name="back">Back</string>
 </resources>
